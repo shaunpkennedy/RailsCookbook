@@ -1,0 +1,6 @@
+rails generate migration add_calories_to_recipes calories:integer
+rails generate scaffold user username:string password_digest:string
+
+User.create :username => "admin", :password => "password", :password_confirmation => "password"
+
+rails generate controller admin index
